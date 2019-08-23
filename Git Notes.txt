@@ -1,0 +1,63 @@
+colon = : 
+Semi-colon = ;
+Ampersand = & 
+
+syntax and commands:
+
+clear
+
+
+To clone a repository :
+            git clone https://github.com/RandbowCoder.song.git
+            Tip: Make sure you are the right directory for your file you will download
+
+Once you are inside your directory you can use git status to check if you modified anything
+on that paticular file or repository. 
+
+            git commit -a -m "Adding in the key of C" 
+            Tip: (-a selects to create a commit to all)
+            Use this everytime you change the file
+
+To set your user.name and user.email
+        git config --global user.name "Fernan80"
+        git config --global user.email "aldkfjagmail.com"
+    Tips: To check: 
+        git config --list
+
+log :
+    git log -2 //This will show the last 2 commit changes.
+    git log    //This will show the previous change of the file or directory
+
+
+
+
+///                 Push and pull dealling with changes
+
+push is PC to Git hub
+pull is Git Hub to PC
+clone is merely downloading a file
+
+//      TO PUSH AND PULL
+        git remote
+                shows origin
+        git remote -v
+                specific url you can push to
+        git push origin master
+        git pull origin master
+
+/// Git remote ////////////
+        git remote -v: will show you your remotes so you can get hold of the url, 
+        git remote rm origin: will remove it, 
+        git remote add origin <url>: will re-add it.
+
+//Previous problems
+
+I could not merge becuaes of unrelated histories of the file. This usually happens
+you create a git repository WITH a README.md, then pull to a local repostory. 
+Solution: Delete the local files and clone the files from git hub to your repository 
+
+// To remove the git init files
+remote git init files:
+        rm -rf .git 
+
+//If you type git log it will set you in VIM. To get out type ':q' 
